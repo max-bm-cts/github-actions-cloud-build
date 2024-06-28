@@ -1,0 +1,11 @@
+name: draft-pull-request
+run-name: ${{ github.actor }} opened a draft pull request
+on:
+  pull_request:
+    types: [converted_to_draft]
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo draft pr opened

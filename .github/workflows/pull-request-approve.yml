@@ -1,0 +1,11 @@
+name: pull-request-approve
+run-name: ${{ github.actor }} approved a pull request
+on:
+  pull_request:
+    types: [review_requested]
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo pr approved
