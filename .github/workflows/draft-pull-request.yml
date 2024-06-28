@@ -2,7 +2,7 @@ name: draft-pull-request
 run-name: ${{ github.actor }} opened a draft pull request
 on:
   pull_request:
-    types: [converted_to_draft]
+    types: [opened]
 jobs:
   hello-world:
     runs-on: ubuntu-latest
