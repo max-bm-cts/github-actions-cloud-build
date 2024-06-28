@@ -2,7 +2,7 @@ name: pull-request-approve
 run-name: ${{ github.actor }} approved a pull request
 on:
   pull_request:
-    types: [review_requested]
+    types: [opened]
 jobs:
   hello-world:
     runs-on: ubuntu-latest
